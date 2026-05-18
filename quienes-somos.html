@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Quienes Somos — PRL · Avícola de Galicia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="header-icon">🛡️</div>
+      <div class="header-text">
+        <h1>Avícola de Galicia</h1>
+        <p>Portal interno del Empleado</p>
+      </div>
+    </div>
+    <div class="breadcrumb">
+      <a href="index.html">Inicio</a> › Quienes Somos
+    </div>
+  </header>
+
+  <main>
+    <div class="page-intro">
+      <h2>👥 Quienes Somos</h2>
+      <p>Conoce nuestra empresa, nuestra actividad y los centros de trabajo que nos forman.</p>
+    </div>
+
+    <!-- Descripción de la empresa -->
+    <div style="background:#fff; border-radius:var(--radius); box-shadow:var(--shadow-card); padding:28px 24px; margin-bottom:32px; border-left:5px solid var(--color-accent);">
+      <h3 style="color:var(--color-primary); font-size:1.1rem; font-weight:700; margin-bottom:14px;">🏢 Nuestra Empresa</h3>
+      <p style="color:#444; line-height:1.75; font-size:0.95rem; margin-bottom:10px;">
+        Avícola de Galicia, empresa del Grupo Vall Companys, es un referente del sector avícola con más de 50 años de experiencia en la producción, transformación y comercialización de productos de alta calidad. Desde sus raíces en Campañó (Pontevedra), la compañía ha crecido combinando tradición, innovación y compromiso con la excelencia, adaptándose a las nuevas demandas del mercado sin perder su identidad.
+
+Especializada en la cría de aves, fabricación de piensos y distribución de productos cárnicos, Avícola de Galicia trabaja bajo estrictos estándares de bienestar animal, seguridad alimentaria y sostenibilidad. Su equipo humano y la prevención de riesgos laborales son pilares clave de una empresa comprometida con las personas, el entorno y el desarrollo responsable.
+
+      </p>
+      <p style="color:#444; line-height:1.75; font-size:0.95rem;">
+        Nuestro compromiso con las personas que forman parte de la empresa es uno de nuestros pilares fundamentales, por lo que la prevención de riesgos laborales ocupa un lugar prioritario en nuestra gestión diaria.
+      </p>
+    </div>
+
+    <!-- Centros de trabajo -->
+    <div style="background:#fff; border-radius:var(--radius); box-shadow:var(--shadow-card); padding:28px 24px;">
+      <h3 style="color:var(--color-primary); font-size:1.1rem; font-weight:700; margin-bottom:6px;">📍 Centros de Trabajo</h3>
+      <p style="color:#555; font-size:0.92rem; margin-bottom:20px; line-height:1.6;">
+        La empresa está formada por los siguientes centros de trabajo:
+      </p>
+      <img
+        src="Fotos/MapaCentros.jpg"
+        alt="Mapa de los centros de trabajo de Avícola de Galicia"
+        style="width:100%; height:auto; border-radius:10px; display:block; box-shadow:0 2px 10px rgba(0,0,0,0.12);"
+      >
+    </div>
+  </main>
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modal-title">Título</h3>
+        <button class="modal-close" onclick="cerrarModal()">✕</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <div class="logo-placeholder">
+          <img src="Fotos/LogoAvigal.jpg" alt="Logo Avícola de Galicia">
+        </div>
+        <div class="footer-company">
+          <strong>Avícola de Galicia</strong>
+          <span>Departamento de DyGP</span>
+        </div>
+      </div>
+      <div class="footer-responsables">
+        <p>Datos de contacto</p>
+        <div class="nombres">Gabriela Barragáns &nbsp;·&nbsp; gbarragans@avigal.es</div>
+      </div>
+      <div class="footer-copy">
+        <div>© 2026 Avícola de Galicia</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="modal.js"></script>
+</body>
+</html>

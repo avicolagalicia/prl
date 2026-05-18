@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Avigal Valladolid — PRL · Avícola de Galicia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="header-icon">🛡️</div>
+      <div class="header-text">
+        <h1>Avícola de Galicia</h1>
+        <p>Portal interno del Empleado</p>
+      </div>
+    </div>
+    <div class="breadcrumb">
+      <a href="index.html">Inicio</a> › Avigal Valladolid
+    </div>
+  </header>
+
+  <main>
+    <div class="page-intro">
+      <h2>🏢 Avigal Valladolid</h2>
+      <p>Selecciona un apartado para consultar la información de prevención correspondiente.</p>
+    </div>
+
+    <div class="delegaciones-grid delegaciones-grid--pair">
+
+      <a class="delegacion-btn" href="valladolid-calidad.html">
+        <div class="btn-img-wrap">
+          <img src="Fotos/Calidad.jpg" alt="Calidad">
+        </div>
+        <span class="label">CALIDAD</span>
+      </a>
+
+      <a class="delegacion-btn" href="valladolid-bpl.html">
+        <div class="btn-img-wrap">
+          <img src="Fotos/BPL.jpg" alt="BPL">
+        </div>
+        <span class="label">BPL</span>
+      </a>
+
+    </div>
+  </main>
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modal-title">Título</h3>
+        <button class="modal-close" onclick="cerrarModal()">✕</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <div class="logo-placeholder">
+          <img src="Fotos/LogoAvigal.jpg" alt="Logo Avícola de Galicia">
+        </div>
+        <div class="footer-company">
+          <strong>Avícola de Galicia</strong>
+          <span>Departamento de DyGP</span>
+        </div>
+      </div>
+      <div class="footer-responsables">
+        <p>Datos de contacto</p>
+        <div class="nombres">Gabriela Barragáns &nbsp;·&nbsp; gbarragans@avigal.es</div>
+      </div>
+      <div class="footer-copy">
+        <div>© 2026 Avícola de Galicia</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="modal.js"></script>
+</body>
+</html>
