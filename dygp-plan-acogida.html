@@ -5,6 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Plan Acogida — Dpto DyGP y BPL · Avícola de Galicia</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .videos-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+    .video-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-card);
+      border-left: 5px solid var(--color-accent);
+      overflow: hidden;
+    }
+    .video-card .video-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      line-height: 1.3;
+    }
+    .video-card .video-title .icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+    }
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    @media (min-width: 768px) {
+      .videos-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1100px) {
+      .videos-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -22,12 +70,52 @@
   <main>
     <div class="page-intro">
       <h2>📋 Plan Acogida — Dpto DyGP y BPL</h2>
-      <p>Selecciona un apartado para consultar la información correspondiente.</p>
+      <p>Pulsa el play en cada vídeo para reproducirlo.</p>
     </div>
-    <div class="apartados-grid" id="apartados">
-      <div style="grid-column:1/-1; text-align:center; padding:60px 20px; color:#888; font-size:1.05rem;">
-        ⏳ Próximamente — El contenido de esta sección se está preparando.
+    <div class="videos-grid">
+
+      <div class="video-card">
+        <div class="video-title">
+          <span class="icon">🎬</span>
+          <span>Plan Acogida — Dpto. DyGP</span>
+        </div>
+        <div class="video-wrap">
+          <iframe
+            src="https://vallcompanys-my.sharepoint.com/personal/jlgrana_avigal_es/_layouts/15/embed.aspx?share=IQDStamKjV2ORp4kqfQYA0RfATgAD2jf5maMMoqMQwLSiks"
+            allowfullscreen
+            allow="autoplay; fullscreen; picture-in-picture"
+            title="Plan Acogida Dpto DyGP"></iframe>
+        </div>
       </div>
+
+      <div class="video-card">
+        <div class="video-title">
+          <span class="icon">🎬</span>
+          <span>Plan Acogida — Dpto. Calidad</span>
+        </div>
+        <div class="video-wrap">
+          <iframe
+            src="https://vallcompanys-my.sharepoint.com/personal/jlgrana_avigal_es/_layouts/15/embed.aspx?share=IQA-wJlddZ2nQJ7RSWk3Gd5dAeJPxHilXJ8BtLynahDyxEM"
+            allowfullscreen
+            allow="autoplay; fullscreen; picture-in-picture"
+            title="Plan Acogida Dpto Calidad"></iframe>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-title">
+          <span class="icon">🎬</span>
+          <span>Plan Acogida — Dpto. PRL</span>
+        </div>
+        <div class="video-wrap">
+          <iframe
+            src="https://vallcompanys-my.sharepoint.com/personal/jlgrana_avigal_es/_layouts/15/embed.aspx?share=IQAtkZ9Gy_1zQJoRHu4gmrUFAYIVAybB9FmqJgwpnijuDZQ"
+            allowfullscreen
+            allow="autoplay; fullscreen; picture-in-picture"
+            title="Plan Acogida Dpto PRL"></iframe>
+        </div>
+      </div>
+
     </div>
   </main>
   <footer>
